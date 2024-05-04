@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>HappyHands Interactive</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="main">
+			<div class="menu">
+				<div id="title"></div>
+				<h1 id="instructions">Seleccione una categoria de juego</h1>
+			</div>
+			<div class="categories">
+				<div class="category" id="reconocer-objetos">
+					<div class="cat-img"></div>
+					<div class="cat-name">Reconocimiento de objetos</div>
+				</div>
+				<div class="category" id="palabras">
+					<div class="cat-img"></div>
+					<div class="cat-name">Palabras</div>
+				</div>
+				<div class="category" id="destreza">
+					<div class="cat-img"></div>
+					<div class="cat-name">Destreza</div>
+				</div>
+				<div class="category" id="memoria">
+					<div class="cat-img"></div>
+					<div class="cat-name">Memoria</div>
+				</div>
+			</div>
+			<div class="port-selection">
+				<button id="get-ports">Actualizar</button>
+				<select id="port-select" name="port-select" disabled>
+					<option value="" selected disabled hidden>Click en actualizar<option>
+				</select>
+			</div>
+		</div>
+	
+		<div class="game hidden">
+			<h1 class="instructions"></h1>
+		
+			<div class="game-cat">
+				<div class="game-palabras hidden">
+					<div id="word-object"></div>
+					<div id="word-text"></div>
+				</div>
+				
+				<div class="game-destreza hidden">
+					<div class="skill-score">
+						<div>Puntaje:</div>
+						<div id="skill-score">0</div>
+					</div>
+					<div class="skill-field">
+						<div class="col col-1">
+							<div class="figure f-1"></div>
+							<div class="figure-border f-1"></div>
+							<div class="result-mini f-1 hidden"></div>
+						</div>
+						<div class="col col-2">
+							<div class="figure f-2"></div>
+							<div class="figure-border f-2"></div>
+							<div class="result-mini f-2 hidden"></div>
+						</div>
+						<div class="col col-3">
+							<div class="figure f-3"></div>
+							<div class="figure-border f-3"></div>
+							<div class="result-mini f-3 hidden"></div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="game-memoria hidden">
+					<div class="memory">
+						<div id="memory-text">Memoriza estos animales</div>
+						<div id="memory-object"></div>
+					</div>
+					<div class="cards">
+						<div class="card" id="card-1">
+							<div class="card-body">
+								<div class="card-front">
+									<div class="card-image"></div>
+									<div class="card-name">Nombre</div>
+								</div>
+								<div class="card-back">
+									<div class="bg"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card" id="card-2">
+							<div class="card-body">
+								<div class="card-front">
+									<div class="card-image"></div>
+									<div class="card-name">Nombre</div>
+								</div>
+								<div class="card-back">
+									<div class="bg"></div>
+								</div>
+							</div>
+						</div>
+						<div class="card" id="card-3">
+							<div class="card-body">
+								<div class="card-front">
+									<div class="card-image"></div>
+									<div class="card-name">Nombre</div>
+								</div>
+								<div class="card-back">
+									<div class="bg"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="options">
+					<div class="option-1">
+						<div class="answer-1"></div>
+						<button id="yellow" class="option"></button>
+					</div>
+					
+					<div class="option-2">
+						<div class="answer-2"></div>
+						<button id="green" class="option"></button>
+					</div>
+					
+					<div class="option-3">
+						<div class="answer-3"></div>
+						<button id="blue" class="option"></button>
+					</div>
+				</div>
+			</div>
+			
+			<button id="return-main-menu"></button>
+		</div>
+		
+		<div class="result hidden" id="correct">
+			<div class="icon"></div>
+			<h1>Bien</h1>
+		</div>
+		
+		<div class="result hidden" id="incorrect">
+			<div class="icon"></div>
+			<h1>Mal</h1>
+		</div>
+	
+		<script src="renderer.js"></script>
+		<script src="GAMES.js"></script>
+		<script src="mainMenu.js"></script>
+		<script src="gameLogic.js"></script>
+		<script src="gameCategories.js"></script>
+	</body>
+</html>

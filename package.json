@@ -1,0 +1,16 @@
+{
+  "name": "happyhands-interactive",
+  "version": "1.0.0",
+  "description": "Aplicación didáctica para niños de entre 3 y 5 años.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "author": "Set HM",
+  "dependencies": {
+    "@serialport/parser-readline": "^10.5.0",
+    "@serialport/stream": "^10.5.0",
+    "electron": "^22.0.0",
+    "serialport": "^10.5.0"
+  }
+}
