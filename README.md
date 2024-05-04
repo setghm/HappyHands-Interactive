@@ -1,19 +1,15 @@
 # HappyHands Interactive.
 _By Set HM 2023_
 
----
-
 An application designed for children to use, learn the animal species, different shapes and colors, and demonstrate their skill and memory.
 
-![](/readme-assets/preview.mp4)
+![Application preview](/readme-assets/preview.gif)
 
 ## Used technologies.
 
 - [Node.js](https://nodejs.org)
 - [Electron.js](https://www.electronjs.org)
 - [serialport.js](https://serialport.io)
-
----
 
 ## Description and instructions.
 
@@ -27,8 +23,6 @@ For example:
 Once the control is connected to the computer where the application will be used, on the home screen, at the bottom right there is a button that says "Update", press the button and then select your device from the drop-down list.
 
 _Detailed instructions about the control comming soon..._
-
----
 
 ## Copyright note.
 
