@@ -3,7 +3,7 @@ _By Set HM 2023_
 
 An application designed for children to use, learn the animal species, different shapes and colors, and demonstrate their skill and memory.
 
-![Application preview](/readme-assets/preview.gif)
+
 
 ## Used technologies.
 
