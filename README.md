@@ -5,6 +5,10 @@ An application designed for children to use, learn the animal species, different
 
 
 
+https://github.com/setghm/HappyHands-Interactive/assets/53455269/23364d1d-890b-4ae4-93d9-26233bae2c63
+
+
+
 ## Used technologies.
 
 - [Node.js](https://nodejs.org)
